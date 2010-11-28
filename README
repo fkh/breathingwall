@@ -1,0 +1,1 @@
+Controls five relays from an Arduino Uno. The relays are connected to fans, inflating sections of the wall. The breathingwall program sets the relays to work in sync, or independently. 
