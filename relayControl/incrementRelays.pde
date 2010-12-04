@@ -14,6 +14,7 @@ int incrementRelays() {
         
     //    reportStatus("Opening ");
     //    reportStatus(r);
+    
         //set relay to be open 
         relayClosed[r] = false;
         //TODO send pin down
