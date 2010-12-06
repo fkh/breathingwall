@@ -30,8 +30,6 @@ int setRelay(String relayName, String phase, int duration) {
   if (relay == 0) {
     // set all of them
 
-    //reportStatus("Setting all relays");
-
     for (int i=0; i <= relayCount; i++) { // loop through all five relays
       if (phase == "in" || phase == "both") {
         relayBreathe[i] = duration;
@@ -43,12 +41,8 @@ int setRelay(String relayName, String phase, int duration) {
 
     }
 
-  } 
-  else { // we only have one relay to set up
-
-
-    reportStatus("Setting relay:");
-    reportStatus(relay);
+  } else { 
+    // we only have one relay to set up
 
     if (phase == "in" || phase == "both") {
       relayBreathe[relay] = duration;

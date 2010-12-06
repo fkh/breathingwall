@@ -17,7 +17,7 @@ int incrementRelays() {
     
         //set relay to be open 
         relayClosed[r] = false;
-        //TODO send pin down
+        digitalWrite(relay[r],LOW);
           
         //set the increment to the pause length
         relayDuration[r] = relayPause[r];
@@ -26,7 +26,7 @@ int incrementRelays() {
       
         //close relay (i.e. fan on)
         relayClosed[r] = true;
-        //TODO send pin up
+        digitalWrite(relay[r],HIGH);
         
         //set the increment to the blow length
         relayDuration[r] = relayBreathe[r];

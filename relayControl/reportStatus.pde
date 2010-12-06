@@ -23,8 +23,11 @@ int reportStatus(String comment) {
     
     Serial.print("    ");
     Serial.print(countdown);
-    Serial.print(" | " );
-      
+    Serial.print("    " );
+    Serial.print(seedType);
+    Serial.print("    ");
+     
+    /*  
     //what's going on with each relay?
     for (int i=0; i <= relayCount; i++) {
       Serial.print(i+1);
@@ -36,6 +39,7 @@ int reportStatus(String comment) {
       Serial.print(relayDuration[i]);
       Serial.print(" ");      
     }
+    */
 
     Serial.println(". "); 
 
