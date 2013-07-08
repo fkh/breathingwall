@@ -39,10 +39,10 @@ int setPattern() {
       if (seedType == 2) {
 
         // breathe in duration
-        setRelay("all", "in", 5000);    
+        setRelay(0, "in", 5000);    
 
         // breathe out duration
-        setRelay("all", "out", 8000);  
+        setRelay(0, "out", 8000);  
 
         countdown = (10 * 1000);  // only lasts for 30 secs
         

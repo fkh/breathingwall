@@ -1,29 +1,29 @@
 /* set relay */
 // use this to set one or all relays, for phase and duration.
 // duration in ticks
-int setRelay(String relayName, String phase, int duration) {
+int setRelay(int relayName, String phase, int duration) {
 
   // work out which relay is the target
 
   int relay;
 
-  if (relayName == "all") { 
+  if (relayName == 0) { 
     relay = 0; 
   }
 
-  if (relayName == "1") { 
+  if (relayName == 1) { 
     relay = 1; 
   }
-  if (relayName == "2") { 
+  if (relayName == 2) { 
     relay = 2; 
   }
-  if (relayName == "3") { 
+  if (relayName == 3) { 
     relay = 3; 
   }
-  if (relayName == "4") { 
+  if (relayName == 4) { 
     relay = 4; 
   }
-  if (relayName == "5") { 
+  if (relayName == 5) { 
     relay = 5; 
   }
 
